@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3cslab design tokens (SKILL.md) */
+@layer base {
+  :root {
+    --3cs-navy: #003366;
+    --3cs-orange: #ff5722;
+    --3cs-soft-blue: #80b0d4;
+    --3cs-salmon: #ff8a65;
+    --3cs-cool-gray: #b0bec5;
+    --3cs-dark-gray: #333333;
+    --3cs-medium-gray: #666666;
+    --3cs-off-white: #f5f7fa;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-body text-ink-soft antialiased;
+    font-feature-settings: 'ss01', 'cv11';
+  }
+  ::selection {
+    background: #cce0f0;
+    color: #003366;
+  }
+}
+
+@layer components {
+  .container-tight {
+    @apply max-w-6xl mx-auto px-6 sm:px-8;
+  }
+  .container-narrow {
+    @apply max-w-3xl mx-auto px-6 sm:px-8;
+  }
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-sans font-semibold tracking-[0.14em] uppercase text-ink-muted;
+  }
+  .display {
+    @apply font-sans font-semibold tracking-[-0.02em] text-ink;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-accent text-white px-6 py-3.5 text-sm font-sans font-semibold uppercase tracking-wide transition hover:bg-brand-salmon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus-visible:ring-offset-paper;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-brand-cool-gray bg-transparent text-ink px-6 py-3.5 text-sm font-medium transition hover:border-ink/30 hover:bg-ink/[0.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ink;
+  }
+  .card {
+    @apply rounded-2xl border border-brand-cool-gray/50 bg-white p-6 sm:p-7;
+  }
+  .hair {
+    @apply border-t border-brand-cool-gray/40;
+  }
+}
