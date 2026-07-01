@@ -21,7 +21,7 @@ import {
  *   - Change PRIMARY_CTA_HREF to your booking / signup link.
  *   - Change SECONDARY_CTA_HREF if you want it to deep-link elsewhere.
  */
-const PRIMARY_CTA_HREF = 'https://forms.gle/JbiNN578F126Hmx6A'
+const PRIMARY_CTA_HREF = 'https://api.tiqc.nyc/widget/form/lzqlmArZfnYaw3wjD7di'
 const SECONDARY_CTA_HREF = '#how-it-works'
 
 const NAV = [
